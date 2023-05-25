@@ -6,7 +6,7 @@
 * Return: nothing
 */
 
-void sq_rotl(stack_t **stack, unsigned int counter)
+void sq_rotr(stack_t **stack, unsigned int counter)
 {
     stack_t *current, *Next, *temp;
     temp = NULL;
