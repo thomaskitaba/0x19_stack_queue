@@ -101,5 +101,5 @@ void pop_start(stack_t **head)
 */
 void pop_end(stack_t **head)
 {
-	return (*head);
+	return;
 }
