@@ -1,9 +1,13 @@
 #ifndef MONTY_H
 #define MONTY_H
+define _POSIX_C_SOURCE 200809L
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
 #include <string.h>
+#include <ctype.h>
 
 /**
  * stack_s - double linked list
