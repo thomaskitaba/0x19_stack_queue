@@ -12,3 +12,7 @@ sub
 pall
 swap
 pall
+pint
+pop
+pint
+pints

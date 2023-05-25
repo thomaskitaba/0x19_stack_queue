@@ -7,7 +7,7 @@
 */
 void sq_swap(stack_t **stack, unsigned int counter)
 {
-stack_t *current, *Next;
+    stack_t *current, *Next;
 	current = Next = *stack;
 	int num1, num2, temp;
 	num1 = num2 = temp = 0;

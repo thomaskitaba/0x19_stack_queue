@@ -7,6 +7,17 @@
 */
 void sq_pint(stack_t **stack, unsigned int counter)
 {
-    printf("sq_pint funciton goes here\n");
+    stack_t *current;
+    current = *stack;
+
+    if (*stack == NULL)
+	{
+		fprintf(stderr, "L<%d>: can't pint, stack empty\n", counter);
+		fclose(info.file);
+		free(info.content);
+		free_stack(*stack);
+		exit(EXIT_FAILURE);
+	}
+    printf("pint = %d\n", current->n);
 
 }
