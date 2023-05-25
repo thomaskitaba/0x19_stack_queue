@@ -1,12 +1,12 @@
-push -1
-push 1
+push 67
+push 88
 mul
-push 34
+push 100
 pall
 add
-push 1
-push 5
-push 7
+push 111
+push 87
+push 78
 pop
 pall
 add
@@ -22,10 +22,10 @@ pall
 div
 pop
 pop
-push 2
-push 4
-push 9
-push 8
+push 72
+push 74
+push 79
+push 80
 pall
 mod
 pint
