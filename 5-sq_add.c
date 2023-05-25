@@ -9,8 +9,8 @@ void sq_add(stack_t **stack, unsigned int counter)
 {
 	stack_t *current, *Next;
 	current = Next = *stack;
-	int num1, num2, sum;
-	num1 = num2 = sum = 0;
+	int num1, num2, result;
+	num1 = num2 = result = 0;
 
 	if (*stack == NULL)
 	{
@@ -30,6 +30,6 @@ void sq_add(stack_t **stack, unsigned int counter)
 	}
 	num1 = current->n;
 	num2 = current->next->n;
-	sum = num1 + num2;
-	printf("add [%d] + [%d] = %d\n", num1, num2, sum);
+	result = num1 + num2;
+	printf("add [%d] + [%d] = %d\n", num1, num2, result);
 }

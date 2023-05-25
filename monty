@@ -8,3 +8,4 @@ push 7
 pop
 pall
 add
+sub
