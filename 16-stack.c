@@ -7,6 +7,12 @@
 */
 void sq_stack(stack_t **stack, unsigned int counter)
 {
-    if (info.ord_type)
-        info.ord_type = 0;
+    if (info.ord_type != 0 || info.ord_type != 1)
+    {
+        fprintf(stderr, "L<%d>: can't change to stack\n", counter);
+        fclose(info.file);
+        free(info.content);
+        free_stack(*stack);
+    }
+    info.ord_type = 0;
 }
