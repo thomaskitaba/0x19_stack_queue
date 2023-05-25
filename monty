@@ -1,31 +1,14 @@
-push 67
-push 88
-mul
-push 100
-pall
-add
+push 1
+push 2
+push 3
+push 4
+push 0
+push 110
+push 0
+push 108
 push 111
-push 87
-push 78
-pop
-pall
-add
-sub
-pall
-swap
-pall
-pint
-pop
-pint
-nop
-pall
-div
-pop
-pop
-push 72
-push 74
-push 79
-push 80
-pall
-mod
-pint
+push 111
+push 104
+push 99
+push 83
+pstr
