@@ -33,7 +33,7 @@ void sq_div(stack_t **stack, unsigned int counter)
 	num2 = current->next->n;
     result = num2 / num1;
     current->next->n = result;
-    printf("[%d] / [%d] = %d result\n", num1, num2, result);
-    printf("Inserted [%d] on second node of value [%d] and deleted [%d] from Top\n" , result, num2, num1);
+    printf("div = [%d] / [%d] = %d result\n", num2, num1, result);
+    printf("Inserted [%d] on second node of value [%d] and poped [%d] from Top\n" , result, num2, num1);
     sq_pop(stack, counter);
 }

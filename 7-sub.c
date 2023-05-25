@@ -31,5 +31,5 @@ void sq_sub(stack_t **stack, unsigned int counter)
 	num1 = current->n;
 	num2 = current->next->n;
 	result = num2 - num1;
-	printf("add [%d] + [%d] = %d\n", num1, num2, result);
+	printf("sub [%d] - [%d] = %d\n", num2, num1, result);
 }

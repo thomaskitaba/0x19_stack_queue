@@ -22,7 +22,7 @@ void sq_pall(stack_t **head, unsigned int counter)
     }
     else
     {
-        fprintf(stderr, "L<%u>: can't pint, stack empty\n", counter);
+        fprintf(stderr, "L<%u>: can't pall, stack empty\n", counter);
         free(info.content);
         fclose(info.file);
         free_stack(*head);
