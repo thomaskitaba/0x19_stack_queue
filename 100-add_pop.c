@@ -91,7 +91,7 @@ void *pop_start(stack_t **head, unsigned int n)
     {
         current = NULL;
         stack = current;
-
+        free(current);
     }
 }
 /**
