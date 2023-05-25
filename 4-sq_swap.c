@@ -8,8 +8,9 @@
 void sq_swap(stack_t **stack, unsigned int counter)
 {
     stack_t *current, *Next;
-	current = Next = *stack;
 	int num1, num2, temp;
+
+    current = Next = *stack;
 	num1 = num2 = temp = 0;
 
 	if (current->next == NULL)

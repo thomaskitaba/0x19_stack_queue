@@ -7,12 +7,10 @@
 */
 void sq_push(stack_t **head, unsigned int counter)
 {
-    stack_t *current;
-    current = *head;
 
     if (head == NULL)
     {
-        fprintf(stderr, "Invaled argument passed");
+        fprintf(stderr, "L[%d] stack has no pinter", counter);
         fclose(info.file);
         free(info.content);
         free_stack(*head);

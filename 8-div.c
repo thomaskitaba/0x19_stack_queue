@@ -8,9 +8,9 @@
 void sq_div(stack_t **stack, unsigned int counter)
 {
     stack_t *current, *Next;
-	current = Next = *stack;
 	int num1, num2, result;
 
+    current = Next = *stack;
 	num1 = num2 = result = 0;
     if (current->n == 0)
     {
