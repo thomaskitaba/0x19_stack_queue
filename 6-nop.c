@@ -7,5 +7,8 @@
 */
 void sq_nop(stack_t **stack, unsigned int counter)
 {
+    void(stack);
+    void(counter);
+    print("Nothing\n");
     return;
 }
