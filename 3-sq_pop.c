@@ -21,7 +21,7 @@ void sq_pop(stack_t **head, unsigned int counter)
     if (info.ord_type == 0)
     {
         printf("poped = %d\n", current->n);
-        pop_start(&stack, counter);
+        pop_start(&stack);
     }
     else
         /*pop_end(stack, counter);*/

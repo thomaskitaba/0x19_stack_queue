@@ -12,6 +12,13 @@ void sq_mod(stack_t **stack, unsigned int counter)
 
     current = Next = *stack;
 	num1 = num2 = result = 0;
+    if (current->n == 0)
+    {
+        fprintf(stderr, "L<%d>: division by zero", counter);
+        fclose(info.file);
+        free(info.content);
+        free_stack(*stack);
+    }
 	if (current->next == NULL)
 	{
 		fprintf(stderr, "L<%d>: can't div, stack too short", counter);
@@ -25,7 +32,7 @@ void sq_mod(stack_t **stack, unsigned int counter)
 	num2 = current->next->n;
     result = num2 % num1;
     current->next->n = result;
-    printf("mod = [%d] * [%d] = %d\n", num2, num1, result);
+    printf("mod = [%d] mod [%d] = %d\n", num2, num1, result);
     printf("Inserted [%d] on second node of value [%d] and poped [%d] from Top\n" , result, num2, num1);
     sq_pop(stack, counter);
 

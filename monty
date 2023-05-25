@@ -24,7 +24,8 @@ pop
 pop
 push 2
 push 4
-push 6
+push 9
 push 8
-pop
-pop
+pall
+mod
+pint
