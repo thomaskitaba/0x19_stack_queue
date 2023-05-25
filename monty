@@ -16,4 +16,6 @@ pint
 pop
 pint
 nop
-pints
+pall
+div
+pall

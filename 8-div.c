@@ -9,27 +9,31 @@ void sq_div(stack_t **stack, unsigned int counter)
 {
     stack_t *current, *Next;
 	current = Next = *stack;
-	int num1, num2, sum;
-	num1 = num2 = sum = 0;
-	printf("hello thomas kitaba");
-	if (*stack == NULL)
-	{
-		fprintf(stderr, "Stack is empty");
+	int num1, num2, result;
+
+	num1 = num2 = result = 0;
+    if (current->n == 0)
+    {
+        fprintf(stderr, "L<%d>: division by zero", counter);
 		fclose(info.file);
 		free(info.content);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
-	}
+    }
 	if (current->next == NULL)
 	{
-		fprintf(stderr, "minimum of 2 nodes needed to perform addition");
+		fprintf(stderr, "L<%d>: can't div, stack too short", counter);
 		fclose(info.file);
 		free(info.content);
 		free_stack(*stack);
 		exit(EXIT_FAILURE);
 	}
+
 	num1 = current->n;
 	num2 = current->next->n;
-	sum = num1 + num2;
-	printf("%d", sum);
+    result = num2 / num1;
+    current->next->n = result;
+    printf("[%d] / [%d] = %d result\n", num1, num2, result);
+    printf("Inserted [%d] on second node of value [%d] and deleted [%d] from Top\n" , result, num2, num1);
+    sq_pop(stack, counter);
 }
