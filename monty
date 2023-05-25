@@ -20,5 +20,6 @@ pint
 nop
 pall
 div
+pop
 pall
 pall
