@@ -1,0 +1,10 @@
+push -1
+push 34
+pall
+add
+push 1
+push 5
+push 7
+pop
+pall
+add
