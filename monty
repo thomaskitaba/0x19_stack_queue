@@ -9,3 +9,6 @@ pop
 pall
 add
 sub
+pall
+swap
+pall

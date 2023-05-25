@@ -7,5 +7,24 @@
 */
 void sq_swap(stack_t **stack, unsigned int counter)
 {
-    printf("sq_swap funciton goes here\n");
+stack_t *current, *Next;
+	current = Next = *stack;
+	int num1, num2, temp;
+	num1 = num2 = temp = 0;
+
+	if (current->next == NULL)
+	{
+		fprintf(stderr, "L<%d>: can't swap, stack too short\n", counter);
+		fclose(info.file);
+		free(info.content);
+		free_stack(*stack);
+		exit(EXIT_FAILURE);
+	}
+	num1 = current->n;
+	num2 = current->next->n;
+
+	temp = current->n;
+    current->n = current->next->n;
+    current->next->n = temp;
+	printf("swaped [%d] with [%d]\n", num1, num2);
 }
