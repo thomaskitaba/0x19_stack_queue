@@ -7,24 +7,23 @@
 */
 void sq_rotl(stack_t **stack, unsigned int counter)
 {
-    stack_t *current, *Next, *temp;
-    temp = NULL;
-    current = Next = *stack;
+	stack_t *current, *Next, *temp;
+	temp = current = Next = *stack;
 
-    if (*stack == NULL)
-    {
-        fprintf(stderr, "L<%d>: can't rotr, stack empty\n", counter);
-        fclose(info.file);
-        free(info.content);
-        free_stack(*stack);
-    }
-    while(Next->next)
-    {
-        current = Next;
-        temp = current->next;
-        current->next = current->prev;
-        current->prev = temp;
-        Next =  Next->next;
-    }
-    *stack = current;
+	if (*stack == NULL || current->next == NULL)
+	{
+		return;
+	}
+	temp = temp->next;
+	temp->prev = NULL;
+	while(Next->next)
+	{
+		Next = Next->next;
+	}
+	
+	Next->next = current;
+	current->next = NULL;
+	current->prev = Next;
+
+	*stack = temp;
 }

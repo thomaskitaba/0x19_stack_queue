@@ -18,18 +18,19 @@ int execute(char *content, stack_t **head, unsigned int counter, FILE *file)
 					{"pop", sq_pop},
 					{"swap", sq_swap},
 					{"add", sq_add},
-                    {"nop", sq_nop},
+					{"nop", sq_nop},
 					{"sub", sq_sub},
 					{"div", sq_div},
 					{"mul", sq_mul},
 					{"mod", sq_mod},
-                    {"pchar", sq_pchar},
+					{"pchar", sq_pchar},
 					{"pstr", sq_pstr},
-					{"rotl", sq_rotr},
-					{"rotr", sq_swap},
-                    {"stack", sq_rotr},
+					{"rotl", sq_rotl},
+					{"rotr", sq_rotr},
+					{"stack", sq_stack},
 					{"queue", sq_swap},
-                    {NULL, NULL}};
+					{"line", sq_line},
+                   			{NULL, NULL}};
     op = arg = NULL;
 	i = j = flag = 0;
 	/*tokenize content using strtok*/

@@ -25,7 +25,7 @@ void sq_swap(stack_t **stack, unsigned int counter)
 	num2 = current->next->n;
 
 	temp = current->n;
-    current->n = current->next->n;
-    current->next->n = temp;
+	current->n = current->next->n;
+    	current->next->n = temp;
 	printf("swaped [%d] with [%d]\n", num1, num2);
 }

@@ -10,7 +10,7 @@ void sq_push(stack_t **head, unsigned int counter)
 
     if (head == NULL)
     {
-        fprintf(stderr, "L[%d] stack has no pinter", counter);
+        fprintf(stderr, "L[%d] stack has no pointer", counter);
         fclose(info.file);
         free(info.content);
         free_stack(*head);

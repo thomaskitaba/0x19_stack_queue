@@ -54,6 +54,7 @@ void sq_pop(stack_t **stack, unsigned int counter);
 void sq_swap(stack_t **stack, unsigned int counter);
 void sq_add(stack_t **stack, unsigned int counter);
 void sq_nop(stack_t **stack, unsigned int counter);
+void sq_line(stack_t **stack, unsigned int counter);
 void sq_sub(stack_t **stack, unsigned int counter);
 void sq_div(stack_t **stack, unsigned int counter);
 void sq_mul(stack_t **stack, unsigned int counter);

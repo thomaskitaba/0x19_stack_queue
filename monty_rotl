@@ -1,0 +1,27 @@
+push 4
+push 3
+push 2
+push 1
+push 0
+pall
+line
+rotl
+pall
+line
+rotl
+pall
+line
+rotl
+pall
+line
+rotl
+pall
+line
+rotl
+pall
+line
+nop
+rotr
+pall
+line
+
